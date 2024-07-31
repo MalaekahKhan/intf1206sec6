@@ -1,0 +1,144 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+
+@font-face {
+    font-family: 'SerifBody';
+    src: url('path/to/serif-body-font.woff2') format('woff2'),
+         url('path/to/serif-body-font.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'SansHeading';
+    src: url('path/to/sans-heading-font.woff2') format('woff2'),
+         url('path/to/sans-heading-font.woff') format('woff');
+  }
+  
+ 
+  body {
+    font-family: 'SerifBody', serif;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'SansHeading', sans-serif;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.4rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  p {
+    letter-spacing: 0.03em;
+    word-spacing: 0.1em;
+    text-indent: 20px;
+  }
+  
+  a {
+    color: #a66;
+    text-decoration: underline;
+  }
+  
+  a:visited {
+    color: #a66;
+  }
+  
+  a:focus, a:hover {
+    text-decoration: none;
+    outline: none;
+  }
+  
+  a:active {
+    color: #555;
+    background-color: #eee;
+  }
+  
+  a[href^="http"]::after {
+    content: url('path/to/external-link-icon.png');
+    margin-left: 5px;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 20px 0;
+    line-height: 1.6;
+  }
+  
+  ul li {
+    list-style-image: url('path/to/custom-bullet.png');
+  }
+  
+  nav {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  nav ul {
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 15px 0;
+  }
+  
+  nav a {
+    padding: 10px 20px;
+    display: block;
+    color: #a66;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
